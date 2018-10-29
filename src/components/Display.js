@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
 import Nav from './Nav';
-import { isLoggedIn } from '../utils/AuthService';
-import { CloudinaryContext, Transformation, Video } from 'cloudinary-react';
+import { CloudinaryContext, Video } from 'cloudinary-react';
 import axios from 'axios';
 
 class Display extends Component {
@@ -12,7 +10,16 @@ class Display extends Component {
   getVideos() {
     axios.get('http://res.cloudinary.com/unicodeveloper/video/list/miniflix.json')
           .then(res => {
-            console.log(res.data.resources);
+            
+
+            
+        /*
+           To check the data from resources are being load or not.
+           console.log(res.data.resources);
+         */ 
+
+
+
             this.setState({ videos: res.data.resources.splice(0,12)});
     });
   }
