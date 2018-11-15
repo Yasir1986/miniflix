@@ -7,7 +7,7 @@ This is the code that accompanies the **Miniflix** tutorial on **Scotch.io**.
 ```bash
 
 # Get the project
-git clone https://github.com/unicodeveloper/miniflix
+git clone https://github.com/Yasir1986/miniflix.git
 
 # Change directory
 cd miniflix
